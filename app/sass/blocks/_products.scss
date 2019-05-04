@@ -1,0 +1,23 @@
+.products {
+  width: 700px;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 31px;
+  }
+
+  &__item {
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+
+  & .product:hover {
+    box-shadow: none;
+  }
+
+}

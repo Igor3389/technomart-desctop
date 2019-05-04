@@ -1,0 +1,33 @@
+.social {
+  &__list {
+    display: flex;
+    justify-content: flex-end;
+    width: 260px;
+    margin-right: auto;
+  }
+
+  &__item {
+    margin-left: 4px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &__link {
+    display: flex;
+    user-select: none;
+    width: 41px;
+    height: 41px;
+    background-color: $acient-blue-hover;
+    border-radius: 50%;
+
+    &:hover, &:focus {
+      background-color: $acient-red;
+    }
+  }
+
+  &__icon {
+    margin: auto;
+    fill: $white;
+  }
+}

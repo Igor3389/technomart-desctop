@@ -1,0 +1,73 @@
+@import "normalize";
+@import "variables";
+@import "libs/slick";
+@import "mixins";
+@import "fonts";
+@import "hidden";
+@import "settings";
+@import "blocks/checkbox";
+@import "blocks/radio";
+@import "blocks/form";
+@import "blocks/subtitle";
+@import "blocks/button";
+@import "blocks/bookmark";
+@import "blocks/checkout";
+@import "blocks/container";
+@import "blocks/main-header";
+@import "blocks/logo";
+@import "blocks/interactive";
+@import "blocks/login";
+@import "blocks/navigation";
+@import "blocks/cart";
+@import "blocks/catalog";
+@import "blocks/compare";
+@import "blocks/search";
+@import "blocks/main";
+@import "blocks/slider";
+@import "blocks/populars";
+@import "blocks/logout";
+@import "blocks/servicies";
+@import "blocks/subheader";
+@import "blocks/new";
+@import "blocks/categories";
+@import "blocks/manufacturies";
+@import "blocks/power";
+@import "blocks/features";
+@import "blocks/main-page";
+@import "blocks/brands";
+@import "blocks/about";
+@import "blocks/map";
+@import "blocks/modal";
+@import "blocks/contacts";
+@import "blocks/write";
+@import "blocks/inner-page";
+@import "blocks/products";
+@import "blocks/product";
+@import "blocks/sort";
+@import "blocks/range";
+@import "blocks/pages";
+@import "blocks/color";
+@import "blocks/bluetooth";
+@import "blocks/description";
+@import "blocks/main-footer";
+@import "blocks/social";
+
+
+body {
+  @include default;
+  min-width: 320px;
+
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: left;
+
+  background-color: $white;
+  color: $black;
+}
+
+
+
+
+

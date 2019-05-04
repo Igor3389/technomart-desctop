@@ -1,0 +1,50 @@
+.login {
+  display: flex;
+  width: 281px;
+
+  &__item {
+    margin-right: 0;
+
+    &:first-child {
+      margin-right: auto;
+    }
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    padding: 12px 24px;
+
+    @include text(21px, 21px);
+    background-color: $white;
+
+    &--enter {
+      padding-left: 48px;
+
+      &:hover .login__icon, &:focus .login__icon {
+        fill: $user-icon-hover;
+      }
+
+      &:active .login__icon {
+        fill: $user-icon-color;
+      }
+    }
+
+    &:hover, &:focus {
+      color: $acient-red;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 14px;
+    left: 13px;
+
+    fill: $user-icon-color;
+  }
+
+}

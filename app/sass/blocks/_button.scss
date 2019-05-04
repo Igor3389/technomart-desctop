@@ -1,0 +1,84 @@
+.button {
+  display: inline-block;
+  padding: 0 5px;
+  height: 38px;
+
+  font-family: 'Cuprum', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: middle;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  border: none;
+  border-radius: 3px;
+  background-color: $acient-red;
+
+
+  &:hover, &:focus {
+    cursor: pointer;
+    background-color: $acient-red-hover;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $acient-red-active;
+  }
+
+  &--gray {
+    background-color: rgba(0, 0, 0, 0.1);
+
+    &:hover, &:focus {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    &:active {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  &--green {
+    background-color: $acient-green;
+    border-bottom: 3px solid $acient-green-border;
+
+    &:hover, &:focus {
+      background-color: $acient-green-hover;
+    }
+
+    &:active {
+      background-color: $acient-green-active;
+      border-bottom: 3px solid $acient-green-active;
+    }
+  }
+
+  &--border {
+    background-color: transparent;
+    border: 3px solid $acient-green;
+    color: $blue-text;
+
+    &:hover, &:focus {
+      background-color: transparent;
+      border: 3px solid $acient-blue;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &--white {
+    background-color: $white;
+    color: $black;
+    border: 1px solid $product-border;
+
+    &:hover, &:focus {
+      background-color: transparent;
+      border: 1px solid $product-oldPrice;
+    }
+
+    &:active {
+      border: 1px solid $acient-red;
+    }
+  }
+}

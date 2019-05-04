@@ -1,0 +1,98 @@
+.range {
+  margin-bottom: 15px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e5e5e5;
+
+  &__title {
+    margin-bottom: 13px;
+    letter-spacing: 1px;
+  }
+
+  &__box {
+    padding-top: 39px;
+    padding-bottom: 39px;
+    padding-left: 21px;
+    padding-right: 23px;
+    margin-bottom: 9px;
+    width: 100%;
+    height: 80px;
+    background-color: $popular-background;
+    border-radius: 3px;
+  }
+
+  &__line {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: #d7dcde;
+  }
+
+  &__scale {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 20px;
+    height: 2px;
+    background-color: #00ca74;
+  }
+
+  &__indicator {
+    position: absolute;
+    top: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: $white;
+    box-shadow: 0 2px 0 0 #cccdcd;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 50%;
+      margin-top: -2px;
+      left: 50%;
+      margin-left: -2px;
+      width: 4px;
+      height: 4px;
+      background-color: #ababab;
+      border-radius: 50%;
+    }
+
+    &--left {
+      left: 0;
+    }
+
+    &--right {
+      right: 20px;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+  }
+
+  &__label {
+    display: flex;
+    width: 95px;
+
+    &:first-child {
+      margin-right: auto;
+    }
+  }
+
+  &__field {
+    padding: 6px 7px 8px;
+    width: 100%;
+    height: 38px;
+    @include text(17px, 18px);
+    text-align: center;
+    color: #283136;
+    background-color: $popular-background;
+    border: none;
+    border-radius: 3px;
+  }
+}

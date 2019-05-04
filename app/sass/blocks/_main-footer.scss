@@ -1,0 +1,120 @@
+.main-footer {
+  @include text(18px, 24px);
+  color: $white;
+  background-color: $acient-blue;
+
+  &__logo {
+    margin-right: auto;
+  }
+
+  &__top {
+    display: flex;
+    margin-bottom: 17px;
+  }
+
+  &__top-nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding-top: 37px;
+    width: 680px;
+  }
+
+  &__top-nav-item {
+    margin-left: 59px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &__top-nav-link {
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:active {
+      text-decoration: none;
+      opacity: 0.3;
+    }
+  }
+
+  &__middle {
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 49px;
+  }
+
+  &__address {
+    width: 330px;
+    margin-right: auto;
+    padding-left: 2px;
+  }
+
+  &__middle-nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 580px;
+
+    color: $yellow-text;
+  }
+
+  &__middle-nav-item {
+    margin-left: 59px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &__middle-nav-link {
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:active {
+      text-decoration: none;
+      opacity: 0.3;
+    }
+  }
+
+  &__bottom {
+    background-color: $acient-blue-border;
+    padding-top: 38px;
+    padding-bottom: 29px;
+
+    @include text(16px, 18px);
+  }
+
+  &__bottom-wrapper {
+    display: flex;
+  }
+
+  &__copyright {
+    width: 240px;
+    margin-right: 22px;
+  }
+
+  &__feedback {
+    width: 142px;
+    margin-right: 47px;
+  }
+
+  &__author {
+    width: 110px;
+  }
+
+  &__bottom-link {
+    color: $yellow-text;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:active {
+      text-decoration: none;
+      color: $acient-red;
+    }
+  }
+}

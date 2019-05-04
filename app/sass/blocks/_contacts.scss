@@ -1,0 +1,24 @@
+.contacts {
+  width: 300px;
+
+  &__title {
+    margin-bottom: 27px;
+    @include text(30px, 30px);
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    width: 190px;
+    margin-bottom: 30px;
+  }
+
+  &__map-link {
+    display: block;
+    margin-bottom: 32px;
+  }
+
+  &__link {
+    width: 300px;
+  }
+}

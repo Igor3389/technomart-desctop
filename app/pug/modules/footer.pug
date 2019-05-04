@@ -1,0 +1,50 @@
+footer.main-footer
+    .container
+        .main-footer__top
+            if (mainPage)
+                a.main-footer__logo.logo.logo--footer ТЕХНОМАРТ
+            else
+                a.main-footer__logo.logo.logo--footer(href='index.html') ТЕХНОМАРТ
+            ul.main-footer__top-nav-list
+                li.main-footer__top-nav-item
+                    a.main-footer__top-nav-link(href='#') Компания
+                li.main-footer__top-nav-item
+                    a.main-footer__top-nav-link(href='#') Новости
+                li.main-footer__top-nav-item
+                    a.main-footer__top-nav-link(href='#') Каталог
+                li.main-footer__top-nav-item
+                    a.main-footer__top-nav-link(href='#') Доставка
+                li.main-footer__top-nav-item
+                    a.main-footer__top-nav-link(href='#') Контакты
+        .main-footer__middle
+            p.main-footer__address
+                | г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+                br
+                | +7 (812) 555-05-55
+            ul.main-footer__middle-nav-list
+                li.main-footer__middle-nav-item
+                    a.main-footer__middle-nav-link(href='#') Материалы
+                li.main-footer__middle-nav-item
+                    a.main-footer__middle-nav-link(href='#') Техника
+                li.main-footer__middle-nav-item
+                    a.main-footer__middle-nav-link(href='#') Инструмент
+                li.main-footer__middle-nav-item
+                    a.main-footer__middle-nav-link(href='#') Спецпредложения
+    .main-footer__bottom
+        .container.main-footer__bottom-wrapper
+            p.main-footer__copyright
+                | © 2010–2017 Компания «Техномарт»
+                br
+                | Все права защищены
+            +socialList('social', 'item', 'link', [
+                {link: '#', title: 'Мы в контакте', id: 'vk', width: 26, height: 15},
+                {link: '#', title: 'Мы в фейсбуке', id: 'fb', width: 12, height: 22},
+                {link: '#', title: 'Мы в Инстаграмме', id: 'insta', width: 21, height: 21}])
+            p.main-footer__feedback
+                | Обратная связь:
+                br
+                a.main-footer__bottom-link(href='#') mail@htmlacademy.ru
+            p.main-footer__author
+                | Разработано —
+                br
+                a.main-footer__bottom-link(href='#') htmlacademy.ru

@@ -1,0 +1,73 @@
+.features {
+  margin-bottom: 33px;
+  padding-top: 64px;
+
+  &__materials-list {
+    display: flex;
+  }
+
+  &__item {
+    position: relative;
+    width: 300px;
+    min-height: 123px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 20px 100px 20px 24px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+    color: $white;
+    background-repeat: no-repeat;
+
+    &--send {
+      background-color: $send;
+      background-image: url("../img/svg/materials.svg");
+      background-position: right 42px top 31px;
+    }
+
+    &--light-blue {
+      background-color: $light-blue;
+      background-image: url("../img/svg/instrument.svg");
+      background-position: right 28px top 33px;
+    }
+
+    &--light-purpul {
+      background-color: $light-purpul;
+      background-image: url("../img/svg/technik.svg");
+      background-position: right 31px top 31px;
+    }
+
+    &--light-green {
+      background-color: $light-green;
+      background-image: url("../img/svg/discount.svg");
+      background-position: right 45px top 26px;
+    }
+
+    &--light-send {
+      background-color: $light-send;
+      background-image: url("../img/svg/delivery.svg");
+      background-position: right 31px top 32px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 13px;
+    font-weight: 700;
+    @include text(24px, 30px);
+  }
+
+  &__link {
+    width: 135px;
+  }
+
+  &__bottom {
+    display: flex;
+  }
+
+  &__discount {
+    & .features__item {
+      margin-right: 0;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.pages {
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__button {
+    width: 38px;
+
+    &--active {
+      &:hover, &:focus, &:active {
+        background-color: $acient-red;
+        cursor: auto;
+      }
+    }
+
+    &--next {
+      width: 140px;
+    }
+  }
+}

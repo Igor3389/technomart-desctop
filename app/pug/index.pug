@@ -1,0 +1,246 @@
+extends layouts/page
+include mixins/mixins
+block variables
+    - var title= 'Technomart | Главная'
+    - var mainPage= true
+    - var activNavItem= ''
+    - var logout= true
+block pageContent
+    main.main(class=mainPage ? 'main-page' : 'inner-page')
+        .container
+            h1.visually-hidden Technomart
+            section.features
+                h2.visually-hidden Преимущества техномарта
+                ul.features__materials-list
+                    li.features__item.features__item--send
+                        h3.features__title Материалы
+                        a.features__link.button.button--gray(href='#') на любой вкус
+                        span.new
+                    li.features__item.features__item--light-blue
+                        h3.features__title Инструмент
+                        a.features__link.button.button--gray(href='#') НА ВСЕ СЛУЧАИ
+                    li.features__item.features__item--light-purpul
+                        h3.features__title Техника
+                        a.features__link.button.button--gray(href='#') для стройки
+                .features__bottom
+                    ul.features__slider.slider
+                        li.slider__item
+                            .slider__content.slider__content--1
+                                h3.slider__title Дрели
+                                p.slider__text Соседям на радость!
+                                a.slider__link.button(href='#') ОТКРЫТЬ КАТАЛОГ
+                        li.slider__item
+                            .slider__content.slider__content--2
+                                h3.slider__title Перфораторы
+                                p.slider__text Настоящие мужские игрушки
+                                a.slider__link.button(href='#') ОТКРЫТЬ КАТАЛОГ
+                    ul.features__discount
+                        li.features__item.features__item--light-green
+                            h3.features__title Скидки 50%
+                            a.features__link.button.button--gray(href='#') На 350 ТОВАРОВ
+                        li.features__item.features__item--light-send
+                            h3.features__title Доставка
+                            a.features__link.button.button--gray(href='#') бесплатно
+            section.populars
+                header.populars__header.subheader
+                    h2.subheader__title Популярные товары:
+                    a.subheader__link.button(href='#') все популярные товары
+                ul.populars__list
+                    li.populars__item.product
+                        .product__image
+                            +img({
+                                class: 'product__img',
+                                src: 'img/product-photo-1.jpg',
+                                path: 'img/',
+                                name: 'product-photo-1',
+                                alt: 'Перфоратор BOSCH BFG 9000',
+                                retina: ['2x', '3x']
+                            })
+                            .product__options
+                                a.product__buy.button.button--green(href='#') Купить
+                                    +icon('product__cart-icon', 'cart', 15, 15, {ariaHidden: 'true', role: 'presentation'})
+                                a.product__boockmark.button.button--border(href='#') В закладки
+                        h3.product__title Перфоратор BOSCH BFG 9000
+                        span.product__old-price 32500 Р.
+                        span.product__new-price 25500 Р.
+                    li.populars__item.product
+                        .product__image
+                            +img({
+                                class: 'product__img',
+                                src: 'img/product-photo-2.jpg',
+                                path: 'img/',
+                                name: 'product-photo-2',
+                                alt: 'Перфоратор BOSCH BFG 3000',
+                                retina: ['2x', '3x']
+                            })
+                            .product__options
+                                a.product__buy.button.button--green(href='#') Купить
+                                    +icon('product__cart-icon', 'cart', 15, 15, {ariaHidden: 'true', role: 'presentation'})
+                                a.product__boockmark.button.button--border(href='#') В закладки
+                        h3.product__title Перфоратор BOSCH BFG 3000
+                        span.product__old-price 22500 Р.
+                        span.product__new-price 15500 Р.
+                    li.populars__item.product
+                        .product__image
+                            +img({
+                                class: 'product__img',
+                                src: 'img/product-photo-3.jpg',
+                                path: 'img/',
+                                name: 'product-photo-3',
+                                alt: 'Перфоратор BOSCH BFG 6000',
+                                retina: ['2x', '3x']
+                            })
+                            .product__options
+                                a.product__buy.button.button--green(href='#') Купить
+                                    +icon('product__cart-icon', 'cart', 15, 15, {ariaHidden: 'true', role: 'presentation'})
+                                a.product__boockmark.button.button--border(href='#') В закладки
+                        h3.product__title Перфоратор BOSCH BFG 6000
+                        span.product__old-price 30500 Р.
+                        span.product__new-price 25500 Р.
+                    li.populars__item.product
+                        .product__image
+                            +img({
+                                class: 'product__img',
+                                src: 'img/product-photo-2.jpg',
+                                path: 'img/',
+                                name: 'product-photo-2',
+                                alt: 'Перфоратор BOSCH BFG 2000',
+                                retina: ['2x', '3x']
+                            })
+                            .product__options
+                                a.product__buy.button.button--green(href='#') Купить
+                                    +icon('product__cart-icon', 'cart', 15, 15, {ariaHidden: 'true', role: 'presentation'})
+                                a.product__boockmark.button.button--border(href='#') В закладки
+                        h3.product__title Перфоратор BOSCH BFG 2000
+                        span.product__new-price 12500 Р.
+                        span.new
+            section.brands
+                header.brands__header.subheader
+                    h2.subheader__title Популярные Производители:
+                    a.subheader__link.button(href='#') все производители
+                ul.brands__list
+                    li.brands__item
+                        a.brands__link(href='#')
+                            +img({
+                                class: 'brands__img',
+                                src: 'img/brand-photo-1.jpg',
+                                path: 'img/',
+                                name: 'brand-photo-1',
+                                alt: 'bosh',
+                                retina: ['2x', '3x']
+                            })
+                    li.brands__item
+                        a.brands__link(href='#')
+                            +img({
+                                class: 'brands__img',
+                                src: 'img/brand-photo-2.jpg',
+                                path: 'img/',
+                                name: 'brand-photo-2',
+                                alt: 'makita',
+                                retina: ['2x', '3x']
+                            })
+                    li.brands__item
+                        a.brands__link(href='#')
+                            +img({
+                                class: 'brands__img',
+                                src: 'img/brand-photo-3.jpg',
+                                path: 'img/',
+                                name: 'brand-photo-3',
+                                alt: 'dewalt',
+                                retina: ['2x', '3x']
+                            })
+                    li.brands__item
+                        a.brands__link(href='#')
+                            +img({
+                                class: 'brands__img',
+                                src: 'img/brand-photo-4.jpg',
+                                path: 'img/',
+                                name: 'brand-photo-4',
+                                alt: 'interscol',
+                                retina: ['2x', '3x']
+                            })
+                    li.brands__item
+                        a.brands__link(href='#')
+                            +img({
+                                class: 'brands__img',
+                                src: 'img/brand-photo-5.jpg',
+                                path: 'img/',
+                                name: 'brand-photo-5',
+                                alt: 'hitachi',
+                                retina: ['2x', '3x']
+                            })
+                    li.brands__item
+                        a.brands__link(href='#')
+                            +img({
+                                class: 'brands__img',
+                                src: 'img/brand-photo-6.jpg',
+                                path: 'img/',
+                                name: 'brand-photo-6',
+                                alt: 'lg',
+                                retina: ['2x', '3x']
+                            })
+                    li.brands__item
+                        a.brands__link(href='#')
+                            +img({
+                                class: 'brands__img',
+                                src: 'img/brand-photo-7.jpg',
+                                path: 'img/',
+                                name: 'brand-photo-7',
+                                alt: 'aeg',
+                                retina: ['2x', '3x']
+                            })
+                    li.brands__item
+                        a.brands__link(href='#')
+                            +img({
+                                class: 'brands__img',
+                                src: 'img/brand-photo-8.jpg',
+                                path: 'img/',
+                                name: 'brand-photo-8',
+                                alt: 'metabo',
+                                retina: ['2x', '3x']
+                            })
+
+        section.servicies
+            .container
+                h2.servicies__title Сервисы
+                p.servicies__text Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+                ul.servicies__list
+                    li.servicies__item.servicies__item--active
+                        | Доставка
+                        .servicies__content.servicies__content--delivery
+                            h3.servicies__subtitle Доставка
+                            p.servicies__subtext Мы с удовольствием доставим ваш товар прямок вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+                    li.servicies__item
+                        | Гарантия
+                        .servicies__content.servicies__content--warranty
+                            h3.servicies__subtitle Гарантия
+                            p.servicies__subtext Если купленный у нас товар поломается или заискрит,а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
+                    li.servicies__item
+                        | Кредит
+                        .servicies__content.servicies__content--credit
+                            h3.servicies__subtitle Кредит
+                            p.servicies__subtext Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
+                            a.servicies__credit-link.button(href='#') ОТПРАВИТЬ ЗАЯВКУ
+        .container.main__bottom
+            section.about
+                h2.about__title.page-bottom__title КОМПАНИЯ «Техномарт»
+                p.about__text Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
+                p.about__text Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:
+                ul.about__list
+                    li.about__item Деловые линии
+                    li.about__item Автотрейдинг
+                    li.about__item ЖелДорЭкспедиция
+                a.about__link.button(href='#') Подробнее о компании
+            section.contacts
+                h2.contacts__title.page-bottom__title КОНТАКТЫ
+                p.contacts__text Вы можете забрать товар сами,  заехав в наш офис:
+                a.contacts__map-link(href='#')
+                    +img({
+                        class: 'contacts__img',
+                        src: 'img/map-small.jpg',
+                        path: 'img/',
+                        name: 'map-small',
+                        alt: 'Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8',
+                        retina: ['2x', '3x']
+                    })
+                a.contacts__link.button(href='#') Заблудились? Напишите нам!

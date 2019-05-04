@@ -1,0 +1,43 @@
+.about {
+  margin-right: auto;
+  width: 525px;
+
+  &__title {
+    margin-bottom: 27px;
+    @include text(30px, 30px);
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin-bottom: 22px;
+  }
+
+  &__list {
+    margin-bottom: 38px;
+    @include text(17px, 18px);
+    font-weight: 700;
+  }
+
+  &__item {
+    position: relative;
+    margin-bottom: 22px;
+    padding-left: 36px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 9px;
+      left: 0;
+
+      width: 25px;
+      height: 2px;
+
+      background-color: $acient-red;
+    }
+  }
+
+  &__link {
+    width: 220px;
+  }
+}

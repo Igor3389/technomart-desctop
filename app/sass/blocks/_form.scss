@@ -1,0 +1,31 @@
+.form {
+  display: block;
+  width: 220px;
+  margin-right: auto;
+  font-family: 'Ptsans', sans-serif;
+
+  &__section {
+    border: none;
+  }
+
+  &__main-title {
+    padding: 9px 19px 12px;
+    margin-bottom: 10px;
+    @include text(12px, 18px);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: $popular-background;
+    border-radius: 3px;
+  }
+
+  &__title {
+    @include text(17px, 30px);
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__button {
+    width: 140px;
+  }
+}

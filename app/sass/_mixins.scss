@@ -1,0 +1,17 @@
+@mixin default {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin list-default {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin text($fsz, $lh) {
+  font-size: $fsz;
+  line-height: $lh;
+}
+
